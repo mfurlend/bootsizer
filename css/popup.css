@@ -1,0 +1,98 @@
+/**
+ *
+ *  Bootstrap Color 1 :         #6B15A1
+ *  Bootstrap Color Gradient :  #801CA1
+ *  Bootstrap Color Gradient :  #9623A1
+ *  Bootstrap Color 2 :         #AC2AA1
+ *
+ *
+ */
+
+a, a:hover, a:visited, a:focus {
+    color: inherit;
+    text-decoration: inherit;
+    outline: inherit;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 180px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.resizer {
+    display: flex;
+    flex-direction: row;
+}
+.resizer a {
+    flex: 1;
+    cursor: pointer;
+    padding: 5px 0;
+
+    font-size: 1.4em;
+    text-align: center;
+    background: #FFFFFF;
+    border-bottom: 4px solid #6B15A1;
+    color: #6B15A1;
+
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.3);
+    border-right: 1px solid;
+    border-top: 1px solid;
+}
+.resizer a:first-of-type {
+    border-left: 1px solid;
+}
+.resizer a:nth-of-type(4n+1) {
+    border-color: #6B15A1;
+    color: #6B15A1;
+}
+.resizer a:nth-of-type(4n+2) {
+    border-color: #801CA1;
+    color: #801CA1;
+}
+.resizer a:nth-of-type(4n+3) {
+    border-color: #9623A1;
+    color: #9623A1;
+}
+.resizer a:nth-of-type(4n) {
+    border-color: #AC2AA1;
+    color: #AC2AA1;
+}
+.resizer a:nth-of-type(5n) {
+    border-color: #be3fb3;
+    color: #be3fb3;
+}
+
+.resizer a.active {
+    color: #FFFFFF;
+    border-top: 5px solid white;
+    border-bottom: none;
+    box-shadow: none;
+}
+.resizer a.active:nth-of-type(4n+1) {
+    background: #6B15A1;
+}
+.resizer a.active:nth-of-type(4n+2) {
+    background: #801CA1;
+}
+.resizer a.active:nth-of-type(4n+3) {
+    background: #9623A1;
+}
+.resizer a.active:nth-of-type(4n) {
+    background: #AC2AA1;
+}
+.resizer a.active:nth-of-type(5n) {
+    background: #AC2AA1;
+}
+.resizer a:first-of-type.active {
+    border-left-color: white;
+}
+.resizer a:last-of-type.active {
+    border-right-color: white;
+}
